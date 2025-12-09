@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hernandez Consulting</title>
+    <meta name="description" content="Professional consulting services by Ronald Hernandez Jr.">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* ===== Reset ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #F5F5F5; color: #333; line-height: 1.6; }
+
+        /* ===== Header & Nav ===== */
+        header { background: #2A7FBA; }
+        nav { display: flex; justify-content: space-between; padding: 20px 40px; align-items: center; }
+        nav .logo { font-size: 1.7em; font-weight: bold; color: #F5F5F5; }
+        nav .menu a { color: #F5F5F5; margin-left: 25px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav .menu a:hover { color: #F08A70; }
+
+        /* ===== Hero Section ===== */
+        #hero { background: linear-gradient(135deg, #2A7FBA, #5F8B7B); color: #F5F5F5; text-align: center; padding: 120px 20px; }
+        #hero h1 { font-size: 3em; margin-bottom: 20px; }
+        #hero p { font-size: 1.3em; margin-bottom: 30px; }
+        #hero .btn { background: #F08A70; color: #F5F5F5; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; }
+        #hero .btn:hover { background: #B497BD; }
+
+        /* ===== Sections ===== */
+        section { padding: 60px 20px; text-align: center; }
+        #about { background: #A3B18A; color: #F5F5F5; }
+        #services, #pricing { background: #F5F5F5; }
+
+        /* ===== Section Headings ===== */
+        section h2 { font-size: 2.5em; margin-bottom: 20px; color: #2A7FBA; }
+
+        /* ===== Service & Pricing Cards ===== */
+        .service-card, .pricing-card {
+            background: #F5F5F5;
+            display: inline-block;
+            margin: 15px;
+            padding: 25px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover, .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+        }
+        .service-card i, .pricing-card i { color: #F08A70; margin-bottom: 15px; font-size: 2.5em; }
+
+        /* ===== Blog Images ===== */
+        .blog-image { max-width: 20%; height: auto; margin-bottom: 20px; }
+
+        /* ===== Contact Form ===== */
+        form input, form textarea {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #8B6D5C;
+        }
+        form button {
+            background: #2A7FBA;
+            color: #F5F5F5;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        form button:hover { background: #F08A70; }
+
+        /* ===== Footer ===== */
+        footer { background: #2A7FBA; color: #F5F5F5; text-align: center; padding: 25px; margin-top: 40px; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            .service-card, .pricing-card { width: 80%; }
+            .blog-image { max-width: 50%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Arkitekt Creations</div>
+        <div class="menu">
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section id="hero">
+    <h1>Creative, Convenient, Affordable</h1>
+    <p>Professional consulting tailored to your personal and business goals.</p>
+</section>
+
+<section id="services">
+  <h2>My Services</h2>
+    <div class="service-card">
+      <i class="fas fa-chalkboard-teacher"></i>
+        <h3>1-on-1 Coaching</h3>
+        <p>Personalized sessions to help you reach your individual goals.</p>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-users"></i>
+        <h3>Projects</h3>
+        <p>Developing materials that effectively achieve and support the client’s objectives.</p>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Convenience</h3>
+        <p>Providing solutions that simplify tasks and help clients achieve results efficiently.</p>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I help clients achieve success by providing thoughtful, streamlined support that removes unnecessary challenges. I conduct thorough research using credible sources to ensure the information and strategies I provide are accurate and reliable. Through personalized sessions, I deliver practical tools and insights that empower clients to reach their personal objectives efficiently. My approach emphasizes clarity, effectiveness, and results, enabling clients to confidently apply knowledge and share it with the world.</p>
+</section>
+
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="pricing-card">
+    <i class="fas fa-star"></i>
+    <h3>Per Hour</h3>
+    <p>$25 - $250</p>
+  </div>
+  <div class="pricing-card">
+      <i class="fas fa-star-half-alt"></i>
+      <h3>Per Word</h3>
+      <p>$0.30 - $1.00</p>
+  </div>
+  <div class="pricing-card">
+      <i class="fas fa-crown"></i>
+      <h3>Per Project</h3>
+      <p>Negotiable</p>
+  </div>
+</section>
+
+<section id="blog">
+    <h2>Blog Post</h2>
+    <div class="service-card" style="text-align:left; width: 80%; margin: 0 auto;">
+        <h3 style="margin-bottom: 15px;">Finding Your Voice: Overcoming Social Anxiety and Shyness</h3>
+        <p style="margin-bottom: 15px;">As someone who was once the most social and extroverted person in my circle, I remember the days when I could walk up to anyone and start talking. Now, after three years of quitting alcohol, I have become more introverted and less social.</p>
+        <p style="margin-bottom: 15px;">So what do you do when communicating becomes difficult and suddenly you find yourself in the hot seat, answering a question you weren’t prepared for?</p>
+
+        <h4 style="margin-bottom: 15px;">Anticipation</h4>
+        <p style="margin-bottom: 15px;">Anyone close to me knows I am a video game nerd. Most of the time, it’s for the reward of playing the game, but occasionally, I find a gem of knowledge in it.</p>
+        <p style="margin-bottom: 15px;">Someone once told me that to develop good reflexes in first-person shooter games, you should imagine someone waiting around every corner. Once you get used to anticipating one person, picture a second behind them, then a third, and so on.</p>
+        <p style="margin-bottom: 15px;">I’ve started applying this in my daily life, and I’ve found that I’m more prepared in those moments than I used to be.</p>
+        <img src="file:///D|/Dreamweaver/Anticipation_Slide.png" alt="Anticipation Slide" class="blog-image">
+
+        <h4 style="margin-bottom: 15px;">Skydive</h4>
+        <p style="margin-bottom: 15px;">I was speaking to my career advisor about my troubles networking, and she told me that I needed to “skydive,” which stuck with me. She was right. Sometimes you have to jump into conversations before your mind has time to stop you.</p>
+        <img src="file:///D|/Dreamweaver/Skydive_slide.png" alt="Skydive Slide" class="blog-image">
+
+        <h4 style="margin-bottom: 15px;">Equality</h4>
+        <p style="margin-bottom: 15px;">Many people struggle to speak because of the environment they’re in, especially when talking to people who seem like “higher authority,” or even something as simple as speaking to customer service.</p>
+        <img src="file:///D|/Dreamweaver/Equality_Slide.png" alt="Equality Slide" class="blog-image">
+
+        <h4 style="margin-bottom: 15px;">Additional Tips</h4>
+        <ul>
+            <li style="margin-bottom: 15px;">Pause and breathe before responding.</li>
+            <li style="margin-bottom: 15px;">Practice simple introductions and small talk topics.</li>
+            <li style="margin-bottom: 15px;">Remember that most people are not judging you.</li>
+            <li style="margin-bottom: 15px;">Ask questions — it takes pressure off you.</li>
+        </ul>
+        <img src="file:///D|/Dreamweaver/Tips_Slide.png" alt="Tips Slide" class="blog-image">
+
+        <p style="margin-bottom: 15px;"><strong>Author:</strong> Ronald Hernandez Jr.</p>
+        <p>Ronald Hernandez is a Creative Analyst and Project Manager who specializes in content strategy and writing. He focuses on helping clients achieve their goals through clear communication, credible sources, and well-researched information.</p>
+    </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+    <p>Email: <strong>arkitektcreations@email.com</strong></p>
+    <p>Or fill out the form below:</p>
+    <form action="https://formspree.io/f/mdkqlvez" method="POST">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+  <p>© 2025 Arkitekt Creations</p>
+</footer>
+
+</body>
+</html>
