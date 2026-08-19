@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hernandez Consulting | Arkitekt Creations</title>
+    <meta name="description" content="Professional consulting, data journalism, and multimedia strategy by Ronald Hernandez Jr.">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- ====== Professional Cambria-Based Styling ====== -->
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Cambria, serif;
+            background: #f4f4f4;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        /* Color Palette */
+        :root {
+            --navy: #0F1C2E;
+            --slate: #2E4057;
+            --gold: #C9A66B;
+            --light: #F4F4F4;
+            --accent: #8FB3D1;
+        }
+
+        /* Header */
+        header {
+            background: var(--navy);
+            padding: 20px 40px;
+            color: var(--light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.9em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: var(--light);
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        /* Hero */
+        #hero {
+            background: linear-gradient(135deg, var(--navy), var(--slate));
+            color: var(--light);
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        #hero h1 {
+            font-size: 3.2em;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Section Headings */
+        section h2 {
+            font-size: 2.4em;
+            color: var(--navy);
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 300px;
+            margin: 20px;
+            display: inline-block;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+        }
+
+        .card i {
+            font-size: 2.5em;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        /* About */
+        #about {
+            background: var(--accent);
+            color: var(--navy);
+            padding: 80px 20px;
+        }
+
+        #about p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.2em;
+        }
+
+        /* Resume Section */
+        #resume {
+            background: var(--light);
+        }
+
+        #resume .resume-box {
+            max-width: 900px;
+            margin: auto;
+            text-align: left;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        #resume h3 {
+            color: var(--slate);
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        #resume ul {
+            margin-left: 20px;
+        }
+
+        /* Contact */
+        form input, form textarea {
+            width: 80%;
+            margin: 10px auto;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--slate);
+            font-family: Cambria, serif;
+        }
+
+        form button {
+            background: var(--navy);
+            color: var(--light);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--light);
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card { width: 85%; }
+            #resume .resume-box { width: 90%; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Arkitekt Creations</div>
+  <nav>
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#resume">Resume</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="hero">
+    <h1>Creative Strategy • Data Journalism • Consulting</h1>
+    <p>Professional consulting and multimedia storytelling tailored to your business, brand, and communication goals.</p>
+</section>
+
+<section id="services">
+    <h2>Professional Services</h2>
+
+    <div class="card">
+        <i class="fas fa-database"></i>
+        <h3>Data Journalism</h3>
+        <p>Transforming complex datasets into clear, compelling stories using credible sources and analytical research.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Creative Consulting</h3>
+        <p>Brand development, content strategy, multimedia direction, and project management for businesses and creators.</p>
+    </div>
+
+  <div class="card">
+    <i class="fas fa-chalkboard-teacher"></i>
+        <h3>1-on-1 Coaching</h3>
+        <p>Personalized guidance to help clients communicate clearly, build confidence, and achieve measurable goals.</p>
+    </div>
+</section>
+
+<section id="resume">
+    <h2>Professional Background</h2>
+
+    <div class="resume-box">
+        <h3>CEO & Creative Consultant — Arkitekt Creations</h3>
+        <ul>
+            <li>Lead multimedia strategy, brand development, and client communication.</li>
+            <li>Built Ark News, a data-driven journalism platform.</li>
+            <li>Produced campaigns achieving 1000% viewership growth.</li>
+        </ul>
+
+        <h3>Data Journalist</h3>
+        <ul>
+            <li>Analyzed 60+ years of housing-price data using credible government datasets.</li>
+            <li>Published features on NASA missions, U.S. 250th, Colorado 150th, and foster care investigations.</li>
+            <li>Specialized in transforming complex information into accessible public reporting.</li>
+        </ul>
+
+        <h3>Education</h3>
+        <ul>
+            <li>Master of Arts — New Media Journalism (In Progress)</li>
+            <li>B.F.A. — Creative Writing (Awarded Course Directors Award in Film)</li>
+        </ul>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a data journalist, creative consultant, and CEO of Arkitekt Creations. My work blends analytical research, multimedia storytelling, and strategic communication to help clients achieve clarity, credibility, and measurable results. I specialize in transforming complex information into accessible narratives that empower audiences and strengthen brands.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+    <p>Email: <strong>arkitektcreations@email.com</strong></p>
+    <p>Or send a message below:</p>
+
+  <form action="https://formspree.io/f/mdkqlvez" method="POST">
+        <label>Your Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Your Message:</label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 Arkitekt Creations</p>
+</footer>
+
+</body>
+</html>
