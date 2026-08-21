@@ -6,87 +6,35 @@
 <title>Contact | Hernandez Consulting</title>
 
 <style>
-    body {
-        font-family: Cambria, serif;
-        background: #F7EEF7;
-        color: #222;
-        margin: 0;
-    }
+    body { font-family: Cambria, serif; margin:0; background:#F7EEF7; color:#222; }
+    :root { --primary:#4A1C4F; --accent:#D7A8D9; --light:#FFFFFF; }
 
-    :root {
-        --primary: #4A1C4F;
-        --accent: #D7A8D9;
-        --light: #FFFFFF;
-    }
+    header { background:var(--primary); padding:20px 40px; color:var(--light);
+             display:flex; justify-content:space-between; align-items:center; }
+    nav a { color:var(--light); margin-left:25px; text-decoration:none; font-weight:bold; }
+    nav a:hover { color:var(--accent); }
 
-    header {
-        background: var(--primary);
-        padding: 20px 40px;
-        color: var(--light);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav a {
-        color: var(--light);
-        margin-left: 25px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    nav a:hover { color: var(--accent); }
-
-    h1 {
-        text-align: center;
-        margin-top: 60px;
-        color: var(--primary);
-        font-size: 2.8em;
-    }
+    h1 { text-align:center; margin-top:60px; color:var(--primary); font-size:2.8em; }
 
     form {
-        max-width: 600px;
-        margin: 40px auto;
-        background: var(--light);
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        max-width:600px; margin:40px auto; background:var(--light); padding:40px;
+        border-radius:12px; box-shadow:0 6px 12px rgba(0,0,0,0.1);
     }
 
     form input, form textarea {
-        width: 100%;
-        padding: 12px;
-        margin-top: 15px;
-        border-radius: 8px;
-        border: 1px solid var(--primary);
-        font-family: Cambria, serif;
+        width:100%; padding:12px; margin-top:15px; border-radius:8px;
+        border:1px solid var(--primary); font-family:Cambria, serif;
     }
 
     form button {
-        background: var(--primary);
-        color: var(--light);
-        padding: 12px 30px;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        font-weight: bold;
-        margin-top: 20px;
-        transition: 0.3s;
+        background:var(--primary); color:var(--light); padding:12px 30px;
+        border:none; border-radius:50px; cursor:pointer; font-weight:bold;
+        margin-top:20px;
     }
 
-    form button:hover {
-        background: var(--accent);
-        color: var(--primary);
-    }
+    form button:hover { background:var(--accent); color:var(--primary); }
 
-    footer {
-        background: var(--primary);
-        color: var(--light);
-        text-align: center;
-        padding: 25px;
-        margin-top: 40px;
-    }
+    footer { background:var(--primary); color:var(--light); text-align:center; padding:25px; margin-top:40px; }
 </style>
 </head>
 
@@ -106,7 +54,6 @@
 <h1>Contact Me</h1>
 
 <form action="https://formspree.io/f/mdkqlvez" method="POST">
-
     <label>Your Name:</label>
     <input type="text" name="name" required>
 
@@ -119,9 +66,7 @@
     <button type="submit">Send Message</button>
 </form>
 
-<footer>
-    © 2025 Arkitekt Creations
-</footer>
+<footer>© 2025 Arkitekt Creations</footer>
 
 </body>
 </html>
